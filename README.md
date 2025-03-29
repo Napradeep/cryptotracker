@@ -1,16 +1,92 @@
 # crypto_tracker
+A real-time cryptocurrency price tracking app built with Flutter. The app fetches live price updates via Binance WebSocket and historical data using Binance's REST API.
 
-A new Flutter project.
+🚀 Features
+📊 Live Price Updates: Connects to Binance WebSocket for real-time prices.
 
-## Getting Started
+📉 Historical Data: Fetches historical price data for different time intervals.
 
-This project is a starting point for a Flutter application.
+📆 Monthly Data Fetching: Retrieves price data for the selected month.
 
-A few resources to get you started if this is your first Flutter project:
+🎨 User-friendly UI: Clean and responsive Flutter UI.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+🛠 Tech Stack
+Flutter (Dart)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+WebSockets for real-time updates
+
+REST API for historical data
+
+Provider for state management
+
+
+clone the repository:
+
+
+git clone https://github.com/your-username/crypto-price-tracker.git
+
+Navigate to the project directory:
+
+cd crypto-price-tracker
+
+Install dependencies:
+flutter pub get
+
+Run the app:
+flutter run
+
+🔗 API Usage
+The app uses Binance API to fetch live and historical crypto data.
+
+📡 WebSocket Connection
+Live price updates are retrieved from:
+
+
+wss://stream.binance.com:9443/ws/{symbol}@trade
+Example:
+wss://stream.binance.com:9443/ws/btcusdt@trade
+⏳ Fetching Historical Data
+Endpoint:
+https://api.binance.com/api/v3/klines
+Example:
+https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1d&limit=30
+
+Time Intervals:
+Interval	Description
+1d	1 day
+1M	1 month
+6M	6 months
+1y	1 year
+Clone the repository:
+
+git clone https://github.com/your-username/crypto-price-tracker.git
+Navigate to the project directory:
+
+
+cd crypto-price-tracker
+Install dependencies:
+
+flutter pub get
+Run the app:
+
+
+flutter run
+🔗 API Usage
+The app uses Binance API to fetch live and historical crypto data.
+
+📡 WebSocket Connection
+Live price updates are retrieved from:
+
+wss://stream.binance.com:9443/ws/{symbol}@trade
+Example:
+wss://stream.binance.com:9443/ws/btcusdt@trade
+
+⏳ Fetching Historical Data
+Endpoint:
+https://api.binance.com/api/v3/klines
+Example:
+https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1d&limit=30
+
+
+
+
